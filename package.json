@@ -1,0 +1,49 @@
+{
+  "name": "lol-tournament-stats",
+  "version": "0.0.1",
+  "description": "A library that aggregates stats from a League of Legends tournament using the response of the RiotAPI.",
+  "main": "./dist/src/match-parser.js",
+  "types": "./dist/src/match-parser.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "fmt": "prettier --write src/**/*.ts test/**/*.ts",
+    "lint": "eslint src/**/*.ts --ext .js,.ts",
+    "test": "npm run lint && prettier --check src/**/*.ts && mocha -r ts-node/register test/**/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yodigi7/lol-tournament-stats.git"
+  },
+  "keywords": [
+    "lol",
+    "riot",
+    "tournament",
+    "League",
+    "of",
+    "Legends",
+    "api",
+    "statistics"
+  ],
+  "author": "yodigi7",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yodigi7/lol-tournament-stats/issues"
+  },
+  "homepage": "https://github.com/yodigi7/lol-tournament-stats#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/mocha": "^5.2.7",
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@typescript-eslint/parser": "^2.13.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "mocha": "^6.2.2",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4"
+  }
+}
