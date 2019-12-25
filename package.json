@@ -1,12 +1,15 @@
 {
   "name": "lol-tournament-stats",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A library that aggregates stats from a League of Legends tournament using the response of the RiotAPI.",
   "main": "./dist/src/match-parser.js",
   "types": "./dist/src/match-parser.d.ts",
   "directories": {
     "test": "test"
   },
+  "files": [
+    "dist/src/**/*"
+  ],
   "scripts": {
     "build": "tsc",
     "fmt": "prettier --write src/**/*.ts test/**/*.ts",
@@ -45,5 +48,6 @@
     "prettier": "^1.19.1",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.4"
-  }
+  },
+  "dependencies": {}
 }
