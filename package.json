@@ -1,9 +1,9 @@
 {
   "name": "lol-tournament-stats",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A library that aggregates stats from a League of Legends tournament using the response of the RiotAPI.",
-  "main": "./dist/src/match-parser.js",
-  "types": "./dist/src/match-parser.d.ts",
+  "main": "dist/src/match-parser.js",
+  "types": "dist/src/match-parser.d.ts",
   "directories": {
     "test": "test"
   },
